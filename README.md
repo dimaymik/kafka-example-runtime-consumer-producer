@@ -11,4 +11,4 @@ This repository contains an example of using Kafka producers and consumers in Sp
 ##### Receiving messages
 1. Create consumer (POST /consumer). *Provide arbitrary consumer id, topic, list of broker addresses and consumer group*
 2. Wait for messages to appear in the topic
-3. Get list of messages received by the consumer (GET /message/receive/\<consumer id>)
+3. Get list of messages received by the consumer (GET /message/receive/{consumer id})
