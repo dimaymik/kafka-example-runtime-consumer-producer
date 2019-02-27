@@ -17,9 +17,9 @@ class ProducerController(private val producesService: ProducerService) {
 
     @PostMapping
     fun createProducer(@RequestBody request: ProducerDto): ResponseDto {
-        log.debug("Request to create producer '${request.topic}'")
+        log.debug("Request to create producer '${request.id}'")
         producesService.createProducer(request)
-        return ResponseDto(0, "Producer '${request.topic}' created")
+        return ResponseDto(0, "Producer '${request.id}' created")
     }
 
     @DeleteMapping("/{topic}")
